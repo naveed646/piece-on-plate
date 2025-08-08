@@ -9,8 +9,8 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="w-full bg-zinc-800 border-b border-gray-200">
-      <nav className="max-w-6xl  px-4 py-2 flex items-center justify-between">
+    <div className="w-full  bg-zinc-800 border-b border-gray-200">
+      <nav className="max-w-6xl mt-4  px-4 py-2 flex items-center justify-between">
         {/* logoo.... */}
         <div className="flex items-center gap-2">
           <img
@@ -49,12 +49,12 @@ function Navbar() {
           >
             Sign up
           </button>
-          <button className="px-6 py-2.5 font-semibold text-white cursor-pointer bg-orange-500 rounded-md hover:shadow-lg transition duration-200">
+          <button  onClick={() => navigate("/login")} className="px-6 py-2.5 font-semibold text-white cursor-pointer bg-orange-500 rounded-md hover:shadow-lg transition duration-200">
             Login
           </button>
         </div>
 
-        {/* Hamburger Icon (Mobile) */}
+        {/* mobile-menu... */}
         <div className="md:hidden">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
