@@ -1,7 +1,7 @@
-import dish1 from '../assets/chickenkabab.jpg';
-import dish2 from '../assets/pasta.png';
-import dish3 from '../assets/steak.jpg';
-import dish4 from '../assets/salad.jpg';
+import dish1 from '../../../assets/chickenkabab.jpg';
+import dish2 from '../../../assets/pasta.png';
+import dish3 from '../../../assets/steak.jpg';
+import dish4 from '../../../assets/salad.jpg';
 
  export const menuItems = [
   {
@@ -91,3 +91,5 @@ import dish4 from '../assets/salad.jpg';
     image: dish4,
   },
 ];
+
+  

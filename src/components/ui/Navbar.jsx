@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate, NavLink } from "react-router-dom";
-import { data } from "./restApi.json";
+import { data } from "./data/navIte.json";
 import logo from "../../assets/logo.jpg";
 import { FaBars, FaTimes } from "react-icons/fa";
 

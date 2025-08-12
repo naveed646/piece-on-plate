@@ -1,6 +1,6 @@
 import { FaFacebookF, FaInstagram, FaTwitter, FaLocationArrow, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import {data} from "./restApi.json"
+import {data} from "./data/navIte.json"
 
 export default function Footer() {
   return (

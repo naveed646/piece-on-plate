@@ -1,24 +1,32 @@
 import './App.css'
 import Layout from './components/ui/Layout'
-import Login from './components/auth/Login'
+import LoginPage from './pages/LoginPage'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Register from './components/auth/Register'
+import RegisterPage from './pages/RegisterPage'
 import HomePage from './pages/HomePage'
 import AboutUs from './pages/About'
 import ExploreMenu from './pages/ExploreMenu'
+import UserDashboard from './pages/UserDashboard'
 
 function App() {
   const router= createBrowserRouter([
      {
         path:'/register',
-        element: <Register/>
+        element: <RegisterPage/>
 
       },
        {
         path:'/login',
-        element: <Login/>
+        element: <LoginPage/>
 
       },
+
+       {
+        path:'/dashboard',
+        element: <UserDashboard/>
+
+      },
+
     {
       path: '/',
     element: <Layout/>,
