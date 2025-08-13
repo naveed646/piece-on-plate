@@ -1,8 +1,7 @@
 import React from 'react'
-import { useNavigate } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 import { FaArrowRight } from "react-icons/fa";
 function Herocom() {
-     const navigate= useNavigate();
   return (
      <>
       {/* heroo sec..... */}
@@ -12,9 +11,9 @@ function Herocom() {
           <p className="text-lg mb-6">
             Where every piece tells a story of flavor, freshness, and love.
           </p>
-          <button onClick={() => navigate("/explore")} className="bg-orange-500 cursor-pointer hover:bg-orange-600 transition px-6 py-3 rounded-full font-semibold flex items-center justify-center mx-auto">
+          <NavLink to="/explore" className="bg-orange-500 cursor-pointer hover:bg-orange-600 transition px-6 py-3 rounded-full font-semibold flex items-center justify-center ">
             Explore Menu <FaArrowRight className="ml-2" />
-          </button>
+          </NavLink>
         </div>
       </section>
      </>

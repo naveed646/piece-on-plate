@@ -7,49 +7,66 @@ import HomePage from './pages/HomePage'
 import AboutUs from './pages/About'
 import ExploreMenu from './pages/ExploreMenu'
 import UserDashboard from './pages/UserDashboard'
+import UserDashBoardLayout from './components/userDashboardComp/userDashBoardLayout'
+import ReservationTable from './components/userDashboardComp/ReservationTable'
+import Table from './components/userDashboardComp/Table'
+import Offer from './components/userDashboardComp/Offer'
 
 function App() {
-  const router= createBrowserRouter([
-     {
-        path:'/register',
-        element: <RegisterPage/>
+  const router = createBrowserRouter([
+  {
+    path: '/register',
+    element: <RegisterPage />
+  },
+  {
+    path: '/login',
+    element: <LoginPage />
+  },
 
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      {
+        path: '/',
+        element: <HomePage />
       },
-       {
-        path:'/login',
-        element: <LoginPage/>
-
+      {
+        path: '/about',
+        element: <AboutUs />
       },
+      {
+        path: '/explore',
+        element: <ExploreMenu />
+      }
+    ]
+  },
 
-       {
-        path:'/dashboard',
-        element: <UserDashboard/>
-
+  {
+    path: '/',
+    element: <UserDashBoardLayout />,
+    children: [
+      {
+        path: 'dashboard',
+        element:<UserDashboard/>
       },
-
     {
-      path: '/',
-    element: <Layout/>,
-    children:[
-      {
-        path:'/',
-        element: <HomePage/>
-
+        path: 'reservation',
+        element: <ReservationTable/>
       },
       {
-        path:'/about',
-        element: <AboutUs/>
-
+        path: 'table',
+        element: <Table/>
       },
-      {
-        path:'/explore',
-        element: <ExploreMenu/>
-
+       {
+        path: 'offer',
+        element: <Offer/>
       },
-     
-    ]    
+
+    ]
   }
-  ])
+]);
+
   return (
     <>
   <RouterProvider router={router}/>
