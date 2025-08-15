@@ -3,8 +3,8 @@
     "navbarLinks": [
       { "id": 1, "title": "HOME", "link": "/" },
       { "id": 2, "title": "ABOUT US", "link": "/about" },
-      { "id": 3, "title": "SERVICES", "link": "/desk" },
-      { "id": 5, "title": "Contact Us", "link": "/dinner" }
+      { "id": 3, "title": "SERVICES", "link": "/services" },
+      { "id": 5, "title": "Contact Us", "link": "/contact" }
     ]
   }
 }

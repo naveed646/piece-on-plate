@@ -49,7 +49,7 @@ function HeaderAndProfile({ toggleSidebar }) {
             <FaUserCircle /> Profile
           </button>
           <button
-            onClick={() => navigate("/login")}
+            onClick={() => navigate("/")}
             className="flex items-center gap-1 px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base cursor-pointer text-zinc-800 hover:bg-zinc-200 rounded-xl "
           >
             <FaSignOutAlt /> Logout

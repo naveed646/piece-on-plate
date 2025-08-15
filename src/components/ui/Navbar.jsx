@@ -42,7 +42,7 @@ function Navbar() {
         </ul>
 
         {/* Buttons...... */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="relative left-22 hidden md:flex items-center gap-4">
           <button
             onClick={() => navigate("/register")}
             className="px-6 py-2.5 text-white cursor-pointer hover:bg-zinc-700 font-semibold"

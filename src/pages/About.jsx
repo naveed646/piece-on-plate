@@ -3,10 +3,11 @@ import HeroSection from "../components/aboutusComp/HeroSection";
 import MainContent from "../components/aboutusComp/MainContent";
 import Crads from "../components/aboutusComp/Crads";
 
+
 function AboutUs() {
   return (
     <div className="min-h-screen w-full  text-black bg-black bg-opacity-80 relative">
-
+      
       <HeroSection/>
 
       {/* Content of it.. */}

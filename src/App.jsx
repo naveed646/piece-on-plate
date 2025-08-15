@@ -11,6 +11,8 @@ import UserDashBoardLayout from './components/userDashboardComp/userDashBoardLay
 import ReservationTable from './components/userDashboardComp/ReservationTable'
 import Table from './components/userDashboardComp/Table'
 import Offer from './components/userDashboardComp/Offer'
+import Services from './pages/Services'
+import ConatctUs from './pages/ConatctUs'
 
 function App() {
   const router = createBrowserRouter([
@@ -38,6 +40,14 @@ function App() {
       {
         path: '/explore',
         element: <ExploreMenu />
+      },
+         {
+        path: '/services',
+        element: <Services />
+      },
+      {
+        path: '/contact',
+        element: <ConatctUs />
       }
     ]
   },
